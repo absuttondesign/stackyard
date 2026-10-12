@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 8 200 112">
+  <!-- Stackyard logo, option A (Anna, 2026-10-01): a big stack in front, two smaller behind. Used next to the name only; the toolbar icon stays one haystack. -->
+  <g transform="translate(52 108) scale(0.62) translate(-64 -108)"><path d="M14 108 C14 60 36 22 64 22 C92 22 114 60 114 108 Z" fill="#F2CF79" stroke="#8A5A14" stroke-width="10.16" stroke-linejoin="round"/><path d="M34 72 C46 66 58 66 70 70 M58 92 C70 86 84 86 96 90 M50 46 C58 42 66 42 74 45" fill="none" stroke="#8A5A14" stroke-width="8.71" stroke-linecap="round"/></g>
+  <g transform="translate(148 108) scale(0.62) translate(-64 -108)"><path d="M14 108 C14 60 36 22 64 22 C92 22 114 60 114 108 Z" fill="#F2CF79" stroke="#8A5A14" stroke-width="10.16" stroke-linejoin="round"/><path d="M34 72 C46 66 58 66 70 70 M58 92 C70 86 84 86 96 90 M50 46 C58 42 66 42 74 45" fill="none" stroke="#8A5A14" stroke-width="8.71" stroke-linecap="round"/></g>
+  <g transform="translate(100 112) scale(0.95) translate(-64 -108)"><path d="M14 108 C14 60 36 22 64 22 C92 22 114 60 114 108 Z" fill="#E9B949" stroke="#8A5A14" stroke-width="6.63" stroke-linejoin="round"/><path d="M34 72 C46 66 58 66 70 70 M58 92 C70 86 84 86 96 90 M50 46 C58 42 66 42 74 45" fill="none" stroke="#8A5A14" stroke-width="5.68" stroke-linecap="round"/></g>
+  <path d="M6 113 H194" stroke="#8A5A14" stroke-width="6" stroke-linecap="round"/>
+</svg>

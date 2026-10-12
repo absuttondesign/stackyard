@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Stackyard · Read Substack by recommendation</title>
+<meta name="description" content="A free Chrome extension for reading Substack by recommendation instead of by algorithm. Made by AB Sutton Design.">
+<meta property="og:title" content="The Stackyard">
+<meta property="og:description" content="Finding things just got a lot easier. Read Substack by recommendation instead of by algorithm.">
+<meta property="og:image" content="https://absuttondesign.github.io/stackyard/assets/stackyard-update.png">
+<link rel="icon" href="assets/favicon.png">
+<style>
+  :root { --ink:#242424; --soft:#6b5a3a; --muted:#7a6d55; --paper:#FBF6EA; --card:#fff; --line:#eadfc6;
+          --gold:#E9B949; --brown:#8A5A14; --on:#FF6719; --on-hover:#e85a10; }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) { --ink:#f1ece2; --soft:#d6c39b; --muted:#b5a888; --paper:#1d1a15; --card:#26221b; --line:#3a3326; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--paper); color:var(--ink); font:18px/1.55 -apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",system-ui,sans-serif; }
+  main { max-width: 1040px; margin: 0 auto; padding: 56px 20px 72px; }
+  .hero { display:grid; grid-template-columns: 1.2fr 1fr; gap: 48px; align-items: center; }
+  .brand { display:flex; align-items:center; gap:18px; }
+  .brand img { height:64px; width:auto; }
+  h1 { margin:0; font:700 clamp(40px,7vw,68px)/1 "New York","Iowan Old Style",Georgia,serif; letter-spacing:-.5px; }
+  .tag { font:italic 500 24px/1.35 Georgia,serif; color:var(--soft); margin:20px 0 0; }
+  .lede { font:20px/1.5 Georgia,serif; margin:18px 0 0; }
+  .cta { display:flex; flex-wrap:wrap; gap:12px; align-items:center; margin-top:28px; }
+  .btn { display:inline-block; background:var(--on); color:#fff; font-weight:700; padding:13px 22px; border-radius:999px; text-decoration:none; }
+  .btn:hover { background:var(--on-hover); }
+  .btn.ghost { background:transparent; color:var(--ink); border:1.5px solid var(--line); }
+  .small { font-size:15px; color:var(--muted); }
+  .shot { width:100%; max-width:380px; justify-self:center; border-radius:18px; box-shadow:0 24px 60px rgba(80,55,10,.22),0 2px 6px rgba(0,0,0,.08); border:1px solid var(--line); background:#fff; }
+  h2 { font:700 30px/1.2 Georgia,serif; margin:72px 0 20px; }
+  .grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(230px,1fr)); gap:16px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:20px 20px 18px; }
+  .card b { display:block; font-size:19px; margin-bottom:4px; }
+  .card span { color:var(--muted); font-size:16px; }
+  .pill { font-family:-apple-system,BlinkMacSystemFont,system-ui,sans-serif; display:inline-block; background:var(--on); color:#fff; font-weight:700; font-size:13px; letter-spacing:.04em; padding:5px 12px; border-radius:999px; margin-bottom:10px; }
+  ol.steps { list-style:none; padding:0; margin:0; counter-reset:s; background:var(--card); border:1px solid var(--line); border-radius:16px; }
+  ol.steps li { counter-increment:s; position:relative; padding:16px 20px 16px 66px; border-bottom:1px solid var(--line); }
+  ol.steps li:last-child { border-bottom:0; }
+  ol.steps li::before { content:counter(s); position:absolute; left:18px; top:14px; width:32px; height:32px; border-radius:50%;
+    background:var(--gold); color:#5a3a0a; border:2.5px solid var(--brown); font-weight:800; font-size:15px; display:flex; align-items:center; justify-content:center; }
+  ol.steps a { color:var(--on); font-weight:600; }
+  code { background:rgba(138,90,20,.1); padding:2px 7px; border-radius:6px; font-size:16px; }
+  .note { margin-top:14px; font-size:16px; color:var(--muted); }
+  footer { margin-top:72px; padding-top:20px; border-top:1px solid var(--line); font-size:15px; color:var(--muted); }
+  footer a, .small a { color:inherit; }
+  @media (max-width: 760px) { .hero { grid-template-columns: 1fr; } main { padding-top: 36px; } }
+</style>
+</head>
+<body>
+<main>
+  <section class="hero">
+    <div>
+      <div class="brand"><img src="assets/logo.svg" alt=""><h1>The Stackyard</h1></div>
+      <p class="tag">Finding things just got a lot easier.</p>
+      <p class="lede">A free Chrome extension for reading Substack by recommendation instead of by algorithm. It's not about who you follow, it's about who you recommend.</p>
+      <div class="cta">
+        <a class="btn" href="Stackyard-beta-v0.6.49.zip" download>Download the beta</a>
+        <a class="btn ghost" href="#install">How to install</a>
+      </div>
+      <p class="small">Version 0.6.49 · Chrome or Brave on a computer · Free</p>
+    </div>
+    <img class="shot" src="assets/popup.png" alt="The Stackyard popup with the Haystack feed and Focus mode switched on, and four haystacks listed.">
+  </section>
+
+  <h2>How it works</h2>
+  <div class="grid">
+    <div class="card"><b>Pick a publication you love.</b><span>Everyone it recommends goes into its haystack.</span></div>
+    <div class="card"><b>Turn on the Haystack feed.</b><span>Your Substack Home shows just haystack writers, newest first.</span></div>
+    <div class="card"><b>Open the Stackyard.</b><span>One page of every post and Note your haystacks recommend.</span></div>
+  </div>
+
+  <h2><span class="pill">NEW IN THE BETA</span><br>Made with our beta testers</h2>
+  <div class="grid">
+    <div class="card"><b>Focus mode.</b><span>Hides the little red badges, so you read instead of checking.</span></div>
+    <div class="card"><b>Hide the side menu.</b><span>It tucks away and slides out when you touch the edge.</span></div>
+    <div class="card"><b>Save straight to Substack.</b><span>Bookmark from the Stackyard and it lands in your Saved list.</span></div>
+    <div class="card"><b>The Stackyard in your Substack menu.</b><span>One click away, right next to Explore.</span></div>
+  </div>
+
+  <h2 id="install">Install (about a minute)</h2>
+  <ol class="steps">
+    <li><a href="Stackyard-beta-v0.6.49.zip" download>Download the zip</a> and unzip it. Move the <b>Stackyard</b> folder somewhere it can stay, like Documents. Chrome runs it from that folder, so don't delete it.</li>
+    <li>In Chrome, type <code>chrome://extensions</code> in the address bar and press Return. (In Brave, it's <code>brave://extensions</code>.)</li>
+    <li>Turn on <b>Developer mode</b> with the switch in the top-right corner.</li>
+    <li>Click <b>Load unpacked</b> and choose the Stackyard folder.</li>
+    <li>Click the puzzle-piece icon in the toolbar and pin <b>Stackyard</b>, so the little haystack sits in your toolbar.</li>
+  </ol>
+  <p class="note">Chrome may show a note about developer-mode extensions. That's normal for anything installed outside the Chrome Web Store. Updating later: unzip the new version over the old folder, then click the reload arrow on the Stackyard card in <code>chrome://extensions</code>.</p>
+
+  <footer>
+    Made by <a href="https://absutton.com">AB Sutton Design</a> · <a href="https://thecarrierfile.substack.com">The Carrierfile</a>.
+    Stackyard reads public Substack pages. It only acts on your account when you click its Save button. Not made by Substack.
+  </footer>
+</main>
+</body>
+</html>
