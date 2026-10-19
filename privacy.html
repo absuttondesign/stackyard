@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Stackyard · Privacy</title>
+<link rel="icon" href="assets/favicon.png">
+<style>
+  :root { color-scheme: light; }
+  body { margin: 0; font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; color: #1a1a1a; background: #fff; }
+  main { max-width: 680px; margin: 0 auto; padding: 48px 20px 80px; }
+  h1 { font-size: 30px; line-height: 1.2; margin: 0 0 6px; }
+  .sub { color: #666; margin: 0 0 32px; }
+  h2 { font-size: 20px; margin: 32px 0 8px; }
+  p, li { margin: 0 0 12px; }
+  ul { padding-left: 22px; }
+  a { color: #ff6719; }
+  footer { margin-top: 48px; color: #666; font-size: 14px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>The Stackyard privacy policy</h1>
+  <p class="sub">For the Stackyard Chrome extension, version 0.6.51 and later · Last updated October 19, 2026</p>
+
+  <h2>The short version</h2>
+  <p>The Stackyard runs entirely in your browser. It does not collect, store, or send your personal data anywhere. There are no accounts, no analytics, no tracking, and no servers of ours.</p>
+
+  <h2>What the extension reads</h2>
+  <ul>
+    <li><strong>Public Substack pages and Substack's public post listings</strong>, to build the haystack feed and the Stackyard page from the publications you choose. These requests are made without your Substack login (the extension sends no cookies with them).</li>
+    <li><strong>The Substack pages you have open</strong>, so it can adjust what you see on your own screen: a calmer Home feed, Focus mode, the side menu, and the Stackyard link in Substack's menu.</li>
+  </ul>
+
+  <h2>What the extension stores</h2>
+  <p>Your settings and the feeds it has built are kept in Chrome's local extension storage on your computer: which haystacks you added, whether the haystack feed and Focus mode are on, the recommendations and posts it last fetched, and which posts you saved. Nothing is synced or sent to us. Removing the extension removes this data.</p>
+
+  <h2>When it acts on your Substack account</h2>
+  <p>Only when you click <strong>Save</strong> on a post in the Stackyard. That one action bookmarks the post to your own Substack Saved list, using the Substack session already open in your browser. The extension never posts, follows, subscribes, or changes anything else on your behalf.</p>
+
+  <h2>Permissions it asks for</h2>
+  <ul>
+    <li><strong>substack.com and *.substack.com</strong>: to read public publication pages and to work on the Substack pages you open.</li>
+    <li><strong>Storage</strong>: to keep your settings and feeds on your computer.</li>
+    <li><strong>Optional, only if you click "Allow custom domains"</strong>: some publications live on their own domain instead of a substack.com address. The Stackyard asks Chrome for permission to read those specific sites only when you ask it to, and Chrome shows you exactly which ones.</li>
+  </ul>
+
+  <h2>What it never does</h2>
+  <ul>
+    <li>No analytics, telemetry, or crash reporting.</li>
+    <li>No data sent to AB Sutton Design or to any third party.</li>
+    <li>No reading of pages outside Substack, except the custom domains you explicitly allow.</li>
+    <li>No selling, sharing, or use of data for anything beyond the extension's one purpose: reading Substack by recommendation.</li>
+  </ul>
+
+  <h2>Changes and contact</h2>
+  <p>If this policy changes, the date at the top changes with it and the new version ships with the extension update. Questions: <a href="https://absutton.com">absutton.com</a>.</p>
+
+  <footer>Made by AB Sutton Design · <a href="index.html">The Stackyard</a> · Not made by Substack.</footer>
+</main>
+</body>
+</html>
